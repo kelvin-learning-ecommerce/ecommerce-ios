@@ -10,6 +10,14 @@
 		2B3D0D5CBE093B268206C818 /* Pods_ecommerce_ios_ecommerce_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4DC60F30C47804B7D520FC9 /* Pods_ecommerce_ios_ecommerce_iosUITests.framework */; };
 		6C752B2F622D775D7E23757D /* Pods_ecommerce_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 592E99FED5B2F9EF969F7D47 /* Pods_ecommerce_ios.framework */; };
 		CCEB4A10C49FE5B0D134D8BA /* Pods_ecommerce_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AC15C69417856F2A3723A3 /* Pods_ecommerce_iosTests.framework */; };
+		D4A0FC542A3C14F800F6CAB8 /* InteractorsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0FC532A3C14F800F6CAB8 /* InteractorsContainer.swift */; };
+		D4A0FC572A3C16DA00F6CAB8 /* RootViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0FC562A3C16DA00F6CAB8 /* RootViewModifier.swift */; };
+		D4A0FC592A3C171700F6CAB8 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0FC582A3C171700F6CAB8 /* Helpers.swift */; };
+		D4A0FC5B2A3C179900F6CAB8 /* NetworkingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0FC5A2A3C179900F6CAB8 /* NetworkingHelpers.swift */; };
+		D4A0FC5D2A3C4DCD00F6CAB8 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0FC5C2A3C4DCD00F6CAB8 /* CancelBag.swift */; };
+		D4A0FC5F2A3C593700F6CAB8 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0FC5E2A3C593700F6CAB8 /* LoginInteractor.swift */; };
+		D4A0FC632A3C685E00F6CAB8 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0FC622A3C685E00F6CAB8 /* LoginResponse.swift */; };
+		D4A0FC682A3C730300F6CAB8 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A0FC672A3C730300F6CAB8 /* Loadable.swift */; };
 		D4AF3C0F2A24AE8000D73B32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4AF3C0E2A24AE8000D73B32 /* Assets.xcassets */; };
 		D4AF3C122A24AE8000D73B32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4AF3C112A24AE8000D73B32 /* Preview Assets.xcassets */; };
 		D4AF3C1C2A24AE8000D73B32 /* ecommerce_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AF3C1B2A24AE8000D73B32 /* ecommerce_iosTests.swift */; };
@@ -26,7 +34,6 @@
 		D4B68A0A2A26EC2300650BE2 /* SystemEventsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B68A092A26EC2300650BE2 /* SystemEventsHandler.swift */; };
 		D4B68A0C2A26F66400650BE2 /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B68A0B2A26F66400650BE2 /* DependencyInjector.swift */; };
 		D4B68A0E2A26F79700650BE2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B68A0D2A26F79700650BE2 /* AppState.swift */; };
-		D4B68A112A2705E400650BE2 /* UserPermissionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B68A102A2705E300650BE2 /* UserPermissionsInteractor.swift */; };
 		D4B68A142A27063300650BE2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B68A132A27063300650BE2 /* Store.swift */; };
 		D4B68A172A2744CD00650BE2 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B68A162A2744CD00650BE2 /* LoginRepository.swift */; };
 		D4B68A1A2A27453A00650BE2 /* WebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B68A192A27453A00650BE2 /* WebRepository.swift */; };
@@ -59,6 +66,14 @@
 		5D89E9B7020E8A507A2424AD /* Pods-ecommerce-ios-ecommerce-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerce-ios-ecommerce-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-ecommerce-ios-ecommerce-iosUITests/Pods-ecommerce-ios-ecommerce-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		63AC15C69417856F2A3723A3 /* Pods_ecommerce_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecommerce_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DC60F30C47804B7D520FC9 /* Pods_ecommerce_ios_ecommerce_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecommerce_ios_ecommerce_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A0FC532A3C14F800F6CAB8 /* InteractorsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorsContainer.swift; sourceTree = "<group>"; };
+		D4A0FC562A3C16DA00F6CAB8 /* RootViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModifier.swift; sourceTree = "<group>"; };
+		D4A0FC582A3C171700F6CAB8 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		D4A0FC5A2A3C179900F6CAB8 /* NetworkingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelpers.swift; sourceTree = "<group>"; };
+		D4A0FC5C2A3C4DCD00F6CAB8 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
+		D4A0FC5E2A3C593700F6CAB8 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		D4A0FC622A3C685E00F6CAB8 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		D4A0FC672A3C730300F6CAB8 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
 		D4AF3C072A24AE7E00D73B32 /* ecommerce-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ecommerce-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AF3C0E2A24AE8000D73B32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4AF3C112A24AE8000D73B32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -78,7 +93,6 @@
 		D4B68A092A26EC2300650BE2 /* SystemEventsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEventsHandler.swift; sourceTree = "<group>"; };
 		D4B68A0B2A26F66400650BE2 /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
 		D4B68A0D2A26F79700650BE2 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		D4B68A102A2705E300650BE2 /* UserPermissionsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPermissionsInteractor.swift; sourceTree = "<group>"; };
 		D4B68A132A27063300650BE2 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		D4B68A162A2744CD00650BE2 /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
 		D4B68A192A27453A00650BE2 /* WebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRepository.swift; sourceTree = "<group>"; };
@@ -139,6 +153,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D4A0FC552A3C16CD00F6CAB8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0FC562A3C16DA00F6CAB8 /* RootViewModifier.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D4A0FC602A3C59DF00F6CAB8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D4B68A162A2744CD00650BE2 /* LoginRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		D4A0FC612A3C683D00F6CAB8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0FC642A3C686200F6CAB8 /* response */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D4A0FC642A3C686200F6CAB8 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0FC622A3C685E00F6CAB8 /* LoginResponse.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
 		D4AF3BFE2A24AE7E00D73B32 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +210,9 @@
 		D4AF3C092A24AE7E00D73B32 /* ecommerce-ios */ = {
 			isa = PBXGroup;
 			children = (
+				D4A0FC612A3C683D00F6CAB8 /* model */,
+				D4A0FC602A3C59DF00F6CAB8 /* Repositories */,
+				D4A0FC552A3C16CD00F6CAB8 /* UI */,
 				D4B68A182A27452F00650BE2 /* networking */,
 				D4B68A122A27062500650BE2 /* utilities */,
 				D4B68A0F2A2705D800650BE2 /* interactor */,
@@ -252,6 +301,7 @@
 				D4B68A092A26EC2300650BE2 /* SystemEventsHandler.swift */,
 				D4B68A0B2A26F66400650BE2 /* DependencyInjector.swift */,
 				D4B68A0D2A26F79700650BE2 /* AppState.swift */,
+				D4A0FC532A3C14F800F6CAB8 /* InteractorsContainer.swift */,
 			);
 			path = "app-core";
 			sourceTree = "<group>";
@@ -259,7 +309,6 @@
 		D4B68A012A260E3B00650BE2 /* dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				D4B68A152A2744A100650BE2 /* repository */,
 				D4B68A022A260E4400650BE2 /* view */,
 			);
 			path = dashboard;
@@ -277,7 +326,7 @@
 		D4B68A0F2A2705D800650BE2 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
-				D4B68A102A2705E300650BE2 /* UserPermissionsInteractor.swift */,
+				D4A0FC5E2A3C593700F6CAB8 /* LoginInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -285,25 +334,21 @@
 		D4B68A122A27062500650BE2 /* utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D4B68A1B2A2749DB00650BE2 /* APICall.swift */,
 				D4B68A132A27063300650BE2 /* Store.swift */,
 				D4B68A1D2A2752A900650BE2 /* UrlConst.swift */,
+				D4A0FC582A3C171700F6CAB8 /* Helpers.swift */,
+				D4A0FC5C2A3C4DCD00F6CAB8 /* CancelBag.swift */,
+				D4A0FC672A3C730300F6CAB8 /* Loadable.swift */,
 			);
 			path = utilities;
-			sourceTree = "<group>";
-		};
-		D4B68A152A2744A100650BE2 /* repository */ = {
-			isa = PBXGroup;
-			children = (
-				D4B68A162A2744CD00650BE2 /* LoginRepository.swift */,
-			);
-			path = repository;
 			sourceTree = "<group>";
 		};
 		D4B68A182A27452F00650BE2 /* networking */ = {
 			isa = PBXGroup;
 			children = (
 				D4B68A192A27453A00650BE2 /* WebRepository.swift */,
-				D4B68A1B2A2749DB00650BE2 /* APICall.swift */,
+				D4A0FC5A2A3C179900F6CAB8 /* NetworkingHelpers.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -515,18 +560,25 @@
 				D4B68A172A2744CD00650BE2 /* LoginRepository.swift in Sources */,
 				D4B68A0A2A26EC2300650BE2 /* SystemEventsHandler.swift in Sources */,
 				D4B68A1E2A2752A900650BE2 /* UrlConst.swift in Sources */,
+				D4A0FC682A3C730300F6CAB8 /* Loadable.swift in Sources */,
+				D4A0FC5F2A3C593700F6CAB8 /* LoginInteractor.swift in Sources */,
+				D4A0FC572A3C16DA00F6CAB8 /* RootViewModifier.swift in Sources */,
 				D4B689FE2A26098400650BE2 /* AppDelegate.swift in Sources */,
 				D4B68A062A260E9000650BE2 /* DashboardView.swift in Sources */,
+				D4A0FC5D2A3C4DCD00F6CAB8 /* CancelBag.swift in Sources */,
 				D4B689FB2A26017900650BE2 /* LoginModel.swift in Sources */,
 				D4B68A0E2A26F79700650BE2 /* AppState.swift in Sources */,
 				D4B68A142A27063300650BE2 /* Store.swift in Sources */,
 				D4B68A0C2A26F66400650BE2 /* DependencyInjector.swift in Sources */,
-				D4B68A112A2705E400650BE2 /* UserPermissionsInteractor.swift in Sources */,
+				D4A0FC632A3C685E00F6CAB8 /* LoginResponse.swift in Sources */,
+				D4A0FC542A3C14F800F6CAB8 /* InteractorsContainer.swift in Sources */,
+				D4A0FC5B2A3C179900F6CAB8 /* NetworkingHelpers.swift in Sources */,
 				D4B68A1A2A27453A00650BE2 /* WebRepository.swift in Sources */,
 				D4B68A082A26EC0B00650BE2 /* AppEnvironment.swift in Sources */,
 				D4AF3C382A24B60200D73B32 /* LoginViewController.swift in Sources */,
 				D4B68A1C2A2749DB00650BE2 /* APICall.swift in Sources */,
 				D4AF3C3B2A24B86600D73B32 /* LoginView.swift in Sources */,
+				D4A0FC592A3C171700F6CAB8 /* Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

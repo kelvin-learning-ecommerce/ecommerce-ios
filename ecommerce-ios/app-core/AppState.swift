@@ -40,8 +40,21 @@ extension AppState {
     }
 }
 
+enum Permission {
+    case pushNotifications
+}
+
+extension Permission {
+    enum Status: Equatable {
+        case unknown
+        case notRequested
+        case granted
+        case denied
+    }
+}
+
 extension AppState {
-    struct Permissions: Equatable {
+    struct Permissions: Equatable {    
         var push: Permission.Status = .unknown
     }
     

@@ -20,25 +20,26 @@ protocol SystemEventsHandler {
 struct RealSystemEventsHandler: SystemEventsHandler {
     
     let container: DIContainer
-    let deepLinksHandler: DeepLinksHandler
-    let pushNotificationsHandler: PushNotificationsHandler
-    let pushTokenWebRepository: PushTokenWebRepository
+    //    let deepLinksHandler: DeepLinksHandler
+    //    let pushNotificationsHandler: PushNotificationsHandler
+    //    let pushTokenWebRepository: PushTokenWebRepository
     private var cancelBag = CancelBag()
     
-    init(container: DIContainer,
-         deepLinksHandler: DeepLinksHandler,
-         pushNotificationsHandler: PushNotificationsHandler,
-         pushTokenWebRepository: PushTokenWebRepository) {
+    init(container: DIContainer
+         //         deepLinksHandler: DeepLinksHandler,
+         //         pushNotificationsHandler: PushNotificationsHandler,
+         //         pushTokenWebRepository: PushTokenWebRepository
+    ) {
         
         self.container = container
-        self.deepLinksHandler = deepLinksHandler
-        self.pushNotificationsHandler = pushNotificationsHandler
-        self.pushTokenWebRepository = pushTokenWebRepository
+        //        self.deepLinksHandler = deepLinksHandler
+        //        self.pushNotificationsHandler = pushNotificationsHandler
+        //        self.pushTokenWebRepository = pushTokenWebRepository
         
         installKeyboardHeightObserver()
         installPushNotificationsSubscriberOnLaunch()
     }
-     
+    
     private func installKeyboardHeightObserver() {
         let appState = container.appState
         NotificationCenter.default.keyboardHeightPublisher
@@ -47,7 +48,7 @@ struct RealSystemEventsHandler: SystemEventsHandler {
             }
             .store(in: cancelBag)
     }
-     
+    
     private func installPushNotificationsSubscriberOnLaunch() {
         weak var permissions = container.interactors.userPermissionsInteractor
         container.appState
@@ -69,8 +70,8 @@ struct RealSystemEventsHandler: SystemEventsHandler {
     }
     
     private func handle(url: URL) {
-        guard let deepLink = DeepLink(url: url) else { return }
-        deepLinksHandler.open(deepLink: deepLink)
+        //        guard let deepLink = DeepLink(url: url) else { return }
+        //        deepLinksHandler.open(deepLink: deepLink)
     }
     
     func sceneDidBecomeActive() {
@@ -83,22 +84,22 @@ struct RealSystemEventsHandler: SystemEventsHandler {
     }
     
     func handlePushRegistration(result: Result<Data, Error>) {
-        if let pushToken = try? result.get() {
-            pushTokenWebRepository
-                .register(devicePushToken: pushToken)
-                .sinkToResult { _ in }
-                .store(in: cancelBag)
-        }
+        //        if let pushToken = try? result.get() {
+        //            pushTokenWebRepository
+        //                .register(devicePushToken: pushToken)
+        //                .sinkToResult { _ in }
+        //                .store(in: cancelBag)
+        //        }
     }
     
     func appDidReceiveRemoteNotification(payload: NotificationPayload,
                                          fetchCompletion: @escaping FetchCompletion) {
-        container.interactors.countriesInteractor
-            .refreshCountriesList()
-            .sinkToResult { result in
-                fetchCompletion(result.isSuccess ? .newData : .failed)
-            }
-            .store(in: cancelBag)
+        //        container.interactors.countriesInteractor
+        //            .refreshCountriesList()
+        //            .sinkToResult { result in
+        //                fetchCompletion(result.isSuccess ? .newData : .failed)
+        //            }
+        //            .store(in: cancelBag)
     }
 }
 
